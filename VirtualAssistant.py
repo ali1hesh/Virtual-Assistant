@@ -20,15 +20,22 @@ def speak(audio):
 def wishMe():
     hour = int(datetime.datetime.now().hour)
     if hour>=0 and hour<12:
-        speak("BONJOUR!")
+        speak("Good Morning!")
 
     elif hour>=12 and hour<18:
-        speak("bonne après-midi!")   
+        speak("Good Afternoon!")   
 
     else:
-        speak("Bonsoir!")  
+        speak("Good Evening!")  
 
-    speak("Hi i am Alaadin. What do you need me to do sir")       
+    speak("Hi i am YOUR VIRTUAL ASSISTANT. What do you need me to do sir")       
+
+def telltime(self):
+    time= str(datetime.datetime.nopw())
+    print(time)
+    hour = time[11:13]
+    min = time[14:16]
+    self.speak(self, "The time is" + hour + "   "+ min + "right now")    
 
 def takeCommand():
 
@@ -100,7 +107,7 @@ if __name__ == "__main__":
 
         elif 'email to abc' in query:
             try:
-                speak("Speak! what you want to say?")
+                speak("Speak! what do you want to say?")
                 content = takeCommand()
                 to = "abcd@gmail.com"    
                 sendEmail(to, content)
@@ -110,6 +117,7 @@ if __name__ == "__main__":
                 speak("Human! i was not able to send this email")  
         elif 'quit' in query:
                os._exit(0)
+  def
         
                 
                 
