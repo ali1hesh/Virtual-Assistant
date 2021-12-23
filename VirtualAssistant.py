@@ -117,7 +117,7 @@ if __name__ == "__main__":
                 speak("Human! i was not able to send this email")  
         elif 'quit' in query:
                os._exit(0)
-  def
+  
         
                 
                 
