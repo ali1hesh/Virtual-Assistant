@@ -114,7 +114,7 @@ if __name__ == "__main__":
                 speak("Email has been sent!")
             except Exception as e:
                 print(e)
-                speak("Human! i was not able to send this email")  
+                speak("Human! the email was not sent")  
         elif 'quit' in query:
                os._exit(0)
   
