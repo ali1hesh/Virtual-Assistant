@@ -78,7 +78,10 @@ if __name__ == "__main__":
             speak("According to Wikipedia")
             print(results)
             speak(results)
-
+            
+        elif 'open youtube' in query:
+            webbrowser.open("youtube.com")
+            
         elif 'open facebook' in query:
             webbrowser.open("facebook.com")
 
@@ -104,6 +107,7 @@ if __name__ == "__main__":
         elif 'open vscode' in query:
             codePath = "C:\\Users\\ali\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe"
             os.startfile(codePath)
+            
 
         elif 'email to abc' in query:
             try:
